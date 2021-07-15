@@ -13,6 +13,9 @@
             font-size: 22px;
             line-height: 26px;
         }
+        br{
+            display: none;
+        }
     }
     .title{
         margin-bottom: 16px;
@@ -48,6 +51,13 @@
             font-size: 22px;
             line-height: 28px;
         }
+        @media #{$big_screen}{
+            font-size: 28px;
+            line-height: 42px;
+            br{
+                display: none;
+            }
+        }
     }
     @media #{$tab}{
         .description.mt-5{
@@ -78,6 +88,9 @@
             height: 112px;
             top: 65px;
         }
+        @media #{$big_screen}{
+            top: 95px;
+        }
     }
     &.text_box_shape_style_2{
         &:after{
@@ -87,6 +100,9 @@
             }
             @media #{$medium_device}{
                 top: 73px;
+            }
+            @media #{$big_screen}{
+                top: 50px;
             }
         }
     }
@@ -99,16 +115,22 @@
             @media #{$medium_device}{
                 top: 131px;
             }
+            @media #{$big_screen}{
+                top: 115px;
+            }
         }
     }
     &.text_box_shape_style_4{
         &:after{
-            top: 31px;
+            top: 86px;
             @media #{$tab}{
                 top: -26px;
             }
             @media #{$medium_device}{
-                top: 4px;
+                top: 61px;
+            }
+            @media #{$big_screen}{
+                top: 24px;
             }
         }
     }
@@ -140,6 +162,17 @@
 @media #{$medium_device}{
     .rd_section {
         margin-bottom: 60px;
+    }
+}
+.rd_text_box_img.ml_135 {
+    margin-left: -119px;
+}
+@media #{$big_screen}{
+    .rd_section {
+        margin-bottom: 60px;
+    }
+    .rd_text_box_img.ml_135 {
+        margin-left: -119px;
     }
 }
 
@@ -176,6 +209,7 @@
         }
     }
 }
+
 @media #{$tab_device}{
     .rd_text_box_img{
         max-width: 234px !important;

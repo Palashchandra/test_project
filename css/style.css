@@ -546,6 +546,13 @@ button:focus {
     bottom: -14%;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .rd_banner .banner_img {
+    max-width: 150%;
+    left: -40%;
+    bottom: -10%;
+  }
+}
 .rd_banner .baner_shape {
   position: absolute;
   left: 0;
@@ -710,6 +717,9 @@ button:focus {
     line-height: 26px;
   }
 }
+.rd_text_box .sub_title br {
+  display: none;
+}
 .rd_text_box .title {
   margin-bottom: 16px;
 }
@@ -753,6 +763,15 @@ button:focus {
     line-height: 28px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .rd_text_box .description {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .rd_text_box .description br {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   .rd_text_box .description.mt-5 {
     margin-top: 20px !important;
@@ -788,6 +807,11 @@ button:focus {
     top: 65px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .text_box_shape:after {
+    top: 95px;
+  }
+}
 .text_box_shape.text_box_shape_style_2:after {
   top: 112px;
 }
@@ -799,6 +823,11 @@ button:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .text_box_shape.text_box_shape_style_2:after {
     top: 73px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .text_box_shape.text_box_shape_style_2:after {
+    top: 50px;
   }
 }
 .text_box_shape.text_box_shape_style_3:after {
@@ -814,8 +843,13 @@ button:focus {
     top: 131px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .text_box_shape.text_box_shape_style_3:after {
+    top: 115px;
+  }
+}
 .text_box_shape.text_box_shape_style_4:after {
-  top: 31px;
+  top: 86px;
 }
 @media (max-width: 991px) {
   .text_box_shape.text_box_shape_style_4:after {
@@ -824,7 +858,12 @@ button:focus {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .text_box_shape.text_box_shape_style_4:after {
-    top: 4px;
+    top: 61px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .text_box_shape.text_box_shape_style_4:after {
+    top: 24px;
   }
 }
 
@@ -853,6 +892,19 @@ button:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .rd_section {
     margin-bottom: 60px;
+  }
+}
+.rd_text_box_img.ml_135 {
+  margin-left: -119px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .rd_section {
+    margin-bottom: 60px;
+  }
+
+  .rd_text_box_img.ml_135 {
+    margin-left: -119px;
   }
 }
 @media (max-width: 991px) {
