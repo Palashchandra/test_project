@@ -1,0 +1,117 @@
+.rd_banner{
+    padding: 100px 0;
+    @media #{$tab}{
+        padding: 150px 0 110px;
+    }
+}
+.rd_banner_content{
+    @media (min-width: 1200px){
+        width: 95%;
+        padding-left: 140px;
+    }
+    @media #{$big_device}{
+        padding-bottom: 980px;
+    }
+    @media #{$medium_device}{
+        padding-bottom: 600px;
+    }
+    .sub_title{
+        color: $heading_color_2;
+        font-size: $h5_font_size;
+        font-family: $body_font;
+        font-weight: $font_medium;
+    }
+}
+.rd_banner_content_wrapper{
+    position: relative;
+    @media #{$big_device}{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
+.rd_banner{
+    position: relative;
+    .banner_img{
+        @media #{$tab}{
+            max-width: 100%;
+            display: flex;
+            margin: 0 auto;
+        }
+        @media #{$big_device}{
+            position: absolute;
+            z-index: 1;
+            bottom: -209px;
+            left: -41%;
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            max-width: 140%;
+            left: -40%;
+            bottom: -14%;
+        }
+    }
+    .baner_shape{
+        position: absolute;
+        left: 0;
+        top: -50px;
+    }
+}
+.rd_banner_sidebar{
+    display: flex;
+    justify-content: flex-end;
+    @media #{$tab}{
+        margin-top: -58px;
+        z-index: -1;
+        position: relative;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+.rd_banner_wrapper{
+    @include background("../img/blue_line_bg.png");
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    padding: 70px 0;
+    @media #{$tab}{
+        width: 100%;
+        padding: 80px 30px 40px;
+        .rd_banner_inner {
+            display: flex;
+        }
+    }
+}
+.banner_sidebar_item{
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    .description{
+        color: $white;
+        font-family: $body_font;
+        font-weight: $font_medium;
+        margin-top: -18px;
+        @media #{$tab}{
+            font-size: 12px;
+            margin-top: -9px;
+        }
+    }
+}
+
+@media #{$tab}{
+    .title.mb_55{
+        margin-bottom: 20px;
+    }
+    .description.mb_100{
+        margin-bottom: 55px;
+    }
+    .sub_title.mb_55{
+        margin-bottom: 25px;
+    }
+}
+@media #{$big_device}{
+    .pr_65{
+        padding-right: 85px;
+    }
+}

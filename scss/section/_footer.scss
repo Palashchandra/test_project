@@ -1,0 +1,195 @@
+.rd_footer_section{
+    &.sec_padding{
+        padding: 830px 0 0;
+    }
+    @include background ('../img/footer_bg.png');
+    @media #{$tab}{
+        background-image: url("../img/footer_mobile_bg.png");
+        background-position: 100% 100%;
+        &.sec_padding{
+            padding: 500px 0 0;
+        }
+    }    
+    @media #{$tab_device}{
+        background-size: 100% 100%;
+    }
+}
+.bank_card_list{
+    display: grid;
+    grid-gap: 5px;
+    a:nth-child(1) {
+        background-position: 0px 0px;
+    }
+    a:nth-child(2) {
+        background-position: -53px 0px;
+    }
+    a:nth-child(3) {
+        background-position: -105px 0px;
+    }
+    a:nth-child(4) {
+        background-position: -158px 0px;
+    }
+    a:nth-child(5) {
+        background-position: -211px 0px;
+    }
+    a:nth-child(6) {
+        background-position: -263px 0px;
+    }
+    a:nth-child(7) {
+        background-position: -315px 0px;
+    }
+    a:nth-child(8) {
+        background-position: -368px 0px;
+    }
+    a {
+        height: 31px;
+        width: 45px;
+    }
+    .snippets_img {
+        background-image: url(../img/credit_card.png);
+        background-repeat: no-repeat;
+    }
+}
+.rd_copyright_content{
+    padding: 30px 0;
+    border-top: 1px solid #b7d8e8;
+    text-align: center;
+    @media #{$tab}{
+        text-align: left;
+        padding: 30px 0 86px;
+        .description{
+            margin-bottom: 10px;
+        }
+    }
+    .description{
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    .subscribe_form_input, .subscribe_btn{
+        background-color: $white;
+        padding: 12px 25px;
+        border: 1px solid $white;
+        font-weight: 300;
+        font-size: 13px;
+        min-width: 257px;
+    }
+    .subscribe_btn{
+        min-width: auto;
+        border-radius: 3px;
+        border-bottom: 4px solid #edeaea;
+        @include transform_time(.3s);
+        &:hover{
+            background-color: #edeaea;
+            border-color: #edeaea;
+        }
+    }
+}
+.footer_social_share_icon {
+    padding: 40px 0;
+    text-align: center;
+    background: $base_color_1;
+    background: linear-gradient(90deg, #0bbafb 0%, #4285ec 100%, #fd1d1d 100%);
+    a{
+        color: $white;
+        margin: 0 6px;
+    }
+    .footer_mobile_logo{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        top: -40px;
+        max-width: 85px;
+    }
+}
+.rd_footer_widget{
+    .widget_title{
+        font-size: 16px;
+        color: #7b7b7b;
+        font-weight: 500;
+        font-family: $body_font;
+        margin-bottom: 26px;
+    }
+    .description{
+        font-size: 13px;
+    }
+    .footer_menu{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            font-size: 13px;
+            margin-bottom: 6px;
+            a{
+                color: #7b7b7b;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+.mobile_dropdown_menu{
+    margin: 40px 0 60px;
+    .dropdown{
+        border-bottom: 1px solid $white;
+        text-align: left;
+        &:first-child{
+            border-top: 1px solid $white;
+        }
+    }
+    .dropdown-menu {
+        position: relative !important;
+        transform: translate3d(0px, 0, 0px) !important;
+        background-color: transparent;
+        border: 0px solid transparent;
+        border-radius: 0;
+    }
+    .nav-link:focus, .nav-link:hover {
+        color: #fff;
+    }
+    .nav-link{
+        text-transform: uppercase;
+        padding: 15px 26px;
+        font-size: 16px;
+    }
+    .dropdown-item{
+        padding: 7px 26px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .dropdown-toggle{
+        position: relative;
+    }
+    .dropdown-toggle:after{
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        border: 0px solid transparent;
+        width: 15px;
+        height: 15px;
+        font-size: 16px;
+        position: absolute;
+        color: #fff;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight:900
+    }
+    .dropdown-toggle.show:after{
+        content: "\f077";
+    }
+}
+@media #{$medium_device}{
+    .rd_footer_section.sec_padding {
+        padding: 730px 0 0;
+    }
+    .subscribe_form {
+        margin-bottom: 30px;
+    }
+    .rd_copyright_content {
+        justify-content: center !important;
+    }
+}

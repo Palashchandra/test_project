@@ -1,0 +1,198 @@
+.rd_text_box{
+    .sub_title{
+        font-size: 30px;
+        font-weight: $font_medium;
+        font-family: $body_font;
+        line-height: 48px;
+        margin-bottom: 0;
+        @media #{$tab}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @media #{$medium_device}{
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+    .title{
+        margin-bottom: 16px;
+        @media #{$tab}{
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 45px;
+        }
+        @media #{$medium_device}{
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 45px;
+        }
+        &.mb_55{
+            margin-bottom: 55px;
+        }
+        &.mb_35{
+            margin-bottom: 35px;
+        }
+    }
+    .description{
+        font-size: 30px;
+        line-height: 48px;
+        .font-medium{
+            font-weight: 500;
+        }
+        @media #{$tab}{
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+        }
+        @media #{$medium_device}{
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+    @media #{$tab}{
+        .description.mt-5{
+            margin-top: 20px !important;
+        }
+    }
+    .cu_btn{
+        margin-top: 46px;
+    }
+}
+.text_box_shape{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 135px;
+        width: 100%;
+        height: 147px;
+        background-color: #f6f6f6;
+        z-index: -1;
+        @media #{$tab}{
+            height: 112px;
+            top: -19px;
+        }
+        @media #{$medium_device}{
+            height: 112px;
+            top: 65px;
+        }
+    }
+    &.text_box_shape_style_2{
+        &:after{
+            top: 112px;
+            @media #{$tab}{
+                top: -19px;
+            }
+            @media #{$medium_device}{
+                top: 73px;
+            }
+        }
+    }
+    &.text_box_shape_style_3{
+        &:after{
+            top: 149px;
+            @media #{$tab}{
+                top: -23px;
+            }
+            @media #{$medium_device}{
+                top: 131px;
+            }
+        }
+    }
+    &.text_box_shape_style_4{
+        &:after{
+            top: 31px;
+            @media #{$tab}{
+                top: -26px;
+            }
+            @media #{$medium_device}{
+                top: 4px;
+            }
+        }
+    }
+}
+.rd_text_box{
+    .cu_btn.btn_1{
+        
+        br{
+            display: none;
+        }
+        @media #{$tab}{
+            position: relative;
+            text-align: left;
+            padding-left: 55px;
+            width: 100%;
+            img{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                max-width: 20px;
+            }
+            br{
+                display: block;
+            }
+        }
+    }
+}
+@media #{$medium_device}{
+    .rd_section {
+        margin-bottom: 60px;
+    }
+}
+
+@media #{$tab}{
+    .rd_section {
+        margin-bottom: 150px;
+    }
+    .rd_text_box_img{
+        position: absolute;
+        right: 0;
+        bottom: -56px;
+        max-width: 175px;
+        z-index: 8;
+    }
+    .text_box_shape_style_2{
+        .rd_text_box_img{
+            right: 0;
+            bottom: -45px;
+            max-width: 157px;
+        }
+    }
+    .text_box_shape_style_3{
+        .rd_text_box_img{
+            right: 0;
+            bottom: -96px;
+            max-width: 166px;
+        }
+    }
+    .text_box_shape_style_4{
+        .rd_text_box_img{
+            right: 0;
+            bottom: -40px;
+            max-width: 192px;
+        }
+    }
+}
+@media #{$tab_device}{
+    .rd_text_box_img{
+        max-width: 234px !important;
+    }
+}
+.bank_card_list{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    a:nth-child(1) {
+        background-position: -9px -44px;
+    }
+    .bank_card_list a {
+        height: 25px;
+        width: 42px;
+    }
+    .snippets_img {
+        background-image: url(../images/snippets.png);
+        background-repeat: no-repeat;
+    }
+}
