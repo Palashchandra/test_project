@@ -83,6 +83,9 @@
             background-color: #edeaea;
             border-color: #edeaea;
         }
+        @media (max-width: 480px){
+            margin: 10px 0;
+        }
     }
 }
 .footer_social_share_icon {

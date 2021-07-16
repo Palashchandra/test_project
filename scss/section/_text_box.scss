@@ -20,7 +20,7 @@
     .title{
         margin-bottom: 16px;
         @media #{$tab}{
-            font-size: 36px;
+            font-size: 26px;
             line-height: 44px;
             margin-bottom: 45px;
         }
@@ -208,6 +208,23 @@
             max-width: 192px;
         }
     }
+}
+@media (max-width: 380px){
+    .rd_text_box_img{
+        max-width: 103px !important;
+        bottom: -20px !important;
+    }
+    .text_box_shape.text_box_shape_style_3{
+        .rd_text_box_img{
+            bottom: -48px !important;
+        }
+    }
+}
+@media (min-width: 380px) and (max-width: 576px){
+    .rd_text_box_img{
+        max-width: 155px !important;
+    }
+    
 }
 
 @media #{$tab_device}{

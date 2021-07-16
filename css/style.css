@@ -725,7 +725,7 @@ button:focus {
 }
 @media (max-width: 991px) {
   .rd_text_box .title {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 44px;
     margin-bottom: 45px;
   }
@@ -938,6 +938,21 @@ button:focus {
     max-width: 192px;
   }
 }
+@media (max-width: 380px) {
+  .rd_text_box_img {
+    max-width: 103px !important;
+    bottom: -20px !important;
+  }
+
+  .text_box_shape.text_box_shape_style_3 .rd_text_box_img {
+    bottom: -48px !important;
+  }
+}
+@media (min-width: 380px) and (max-width: 576px) {
+  .rd_text_box_img {
+    max-width: 155px !important;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .rd_text_box_img {
     max-width: 234px !important;
@@ -1057,6 +1072,11 @@ button:focus {
 .rd_copyright_content .subscribe_btn:hover {
   background-color: #edeaea;
   border-color: #edeaea;
+}
+@media (max-width: 480px) {
+  .rd_copyright_content .subscribe_btn {
+    margin: 10px 0;
+  }
 }
 
 .footer_social_share_icon {
