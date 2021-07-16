@@ -795,6 +795,11 @@ button:focus {
   background-color: #f6f6f6;
   z-index: -1;
 }
+@media (min-width: 1920px) {
+  .text_box_shape:after {
+    top: 149px;
+  }
+}
 @media (max-width: 991px) {
   .text_box_shape:after {
     height: 112px;
