@@ -954,7 +954,7 @@ button:focus {
   }
 
   .text_box_shape.text_box_shape_style_3 .rd_text_box_img {
-    max-width: 155px !important;
+    max-width: 141px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
