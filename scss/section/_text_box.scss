@@ -86,7 +86,7 @@
         }
         @media #{$medium_device}{
             height: 112px;
-            top: 65px;
+            top: 144px;
         }
         @media #{$big_screen}{
             top: 95px;
@@ -99,7 +99,7 @@
                 top: -19px;
             }
             @media #{$medium_device}{
-                top: 73px;
+                top: 172px;
             }
             @media #{$big_screen}{
                 top: 50px;
@@ -224,7 +224,28 @@
     .rd_text_box_img{
         max-width: 155px !important;
     }
-    
+    .text_box_shape.text_box_shape_style_3{
+        .rd_text_box_img{
+            max-width: 155px !important;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .text_box_shape.text_box_shape_style_3{
+        .rd_text_box_img{
+            max-width: 185px !important;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .rd_section.text_box_shape.text_box_shape_style_3{
+        .rd_text_box_img{
+            max-width: 469px;
+        }
+        .rd_text_box_img.ml_135 {
+            margin-left: 0;
+        }
+    }
 }
 
 @media #{$tab_device}{

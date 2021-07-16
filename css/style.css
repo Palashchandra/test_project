@@ -804,7 +804,7 @@ button:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .text_box_shape:after {
     height: 112px;
-    top: 65px;
+    top: 144px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1441px) {
@@ -822,7 +822,7 @@ button:focus {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .text_box_shape.text_box_shape_style_2:after {
-    top: 73px;
+    top: 172px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1441px) {
@@ -951,6 +951,23 @@ button:focus {
 @media (min-width: 380px) and (max-width: 576px) {
   .rd_text_box_img {
     max-width: 155px !important;
+  }
+
+  .text_box_shape.text_box_shape_style_3 .rd_text_box_img {
+    max-width: 155px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .text_box_shape.text_box_shape_style_3 .rd_text_box_img {
+    max-width: 185px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .rd_section.text_box_shape.text_box_shape_style_3 .rd_text_box_img {
+    max-width: 469px;
+  }
+  .rd_section.text_box_shape.text_box_shape_style_3 .rd_text_box_img.ml_135 {
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
