@@ -1,4 +1,8 @@
 .rd_text_box{
+    margin-top: 65px;
+    @media #{$tab}{
+        margin-top: 20px;
+    }
     .sub_title{
         font-size: 30px;
         font-weight: $font_medium;
@@ -71,76 +75,9 @@
 .text_box_shape{
     position: relative;
     z-index: 1;
-    &:after{
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 135px;
-        width: 100%;
-        height: 147px;
-        background-color: #f6f6f6;
-        z-index: -1;
-        @media (min-width: 1920px){
-            top: 149px;
-        }
-        @media #{$tab}{
-            height: 112px;
-            top: -19px;
-        }
-        @media #{$medium_device}{
-            height: 112px;
-            top: 144px;
-        }
-        @media #{$big_screen}{
-            top: 95px;
-        }
-    }
-    &.text_box_shape_style_2{
-        &:after{
-            top: 112px;
-            @media #{$tab}{
-                top: -19px;
-            }
-            @media #{$medium_device}{
-                top: 172px;
-            }
-            @media #{$big_screen}{
-                top: 50px;
-            }
-        }
-    }
-    &.text_box_shape_style_3{
-        &:after{
-            top: 149px;
-            @media #{$tab}{
-                top: -23px;
-            }
-            @media #{$medium_device}{
-                top: 131px;
-            }
-            @media #{$big_screen}{
-                top: 115px;
-            }
-        }
-    }
-    &.text_box_shape_style_4{
-        &:after{
-            top: 86px;
-            @media #{$tab}{
-                top: -26px;
-            }
-            @media #{$medium_device}{
-                top: 61px;
-            }
-            @media #{$big_screen}{
-                top: 24px;
-            }
-        }
-    }
 }
 .rd_text_box{
     .cu_btn.btn_1{
-        
         br{
             display: none;
         }
@@ -181,7 +118,7 @@
 
 @media #{$tab}{
     .rd_section {
-        margin-bottom: 150px;
+        margin-bottom: 115px;
     }
     .rd_text_box_img{
         position: absolute;
@@ -269,5 +206,99 @@
     .snippets_img {
         background-image: url(../images/snippets.png);
         background-repeat: no-repeat;
+    }
+}
+
+.rd-gray-bg-line{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+.section_title{
+    .title{
+        line-height: 1;
+        @media (min-width: 413px) and (max-width: 991px) {
+            font-size: 36px;
+        }
+        @media (max-width: 414px) {
+            font-size: 28px;
+        }
+    }
+    .sub_title{
+        line-height: 50px;
+        font-family: $body_font;
+        @media #{$xs_mobile}{
+            line-height: 26px;
+            font-size: 18px;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .section_title_wrapper{
+        margin-top: 260px;
+        margin-bottom: -251px;
+    }
+    .text_box_shape_style_2{
+        .rd_text_box{
+            margin-top: 256px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 94px;
+            margin-bottom: -311px;
+        }
+    }
+    .text_box_shape_style_3{
+        .rd_text_box{
+            margin-top: -125px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 145px;
+            margin-bottom: -173px;
+        }
+    }
+    .text_box_shape_style_4{
+        .rd_text_box{
+            margin-top: 0px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 145px;
+            margin-bottom: -177px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section_title_wrapper{
+        margin-top: 260px;
+        margin-bottom: -239px;
+    }
+    .text_box_shape_style_2{
+        .rd_text_box{
+            margin-top: 256px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 94px;
+            margin-bottom: -361px;
+        }
+    }
+    .text_box_shape_style_3{
+        .rd_text_box{
+            margin-top: -50px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 145px;
+            margin-bottom: -173px;
+        }
+    }
+    .text_box_shape_style_4{
+        .rd_text_box{
+            margin-top: 107px;
+        }
+        .section_title_wrapper{ 
+            margin-top: 145px;
+            margin-bottom: -177px;
+        }
     }
 }
