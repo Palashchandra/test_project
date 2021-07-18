@@ -728,6 +728,29 @@ button:focus {
 .rd_text_box .sub_title br {
   display: none;
 }
+.rd_text_box .title {
+  margin-bottom: 16px;
+}
+@media (max-width: 991px) {
+  .rd_text_box .title {
+    font-size: 26px;
+    line-height: 44px;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .rd_text_box .title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 45px;
+  }
+}
+.rd_text_box .title.mb_55 {
+  margin-bottom: 55px;
+}
+.rd_text_box .title.mb_35 {
+  margin-bottom: 35px;
+}
 .rd_text_box .description {
   font-size: 30px;
   line-height: 48px;
