@@ -128,7 +128,7 @@ h3 {
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 h5 {
@@ -383,7 +383,7 @@ button:focus {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  bottom: -10px;
+  bottom: -33px;
   height: 20px;
   width: 20px;
   display: inline-grid;
@@ -699,7 +699,7 @@ button:focus {
 }
 
 .rd_text_box {
-  margin-top: 65px;
+  margin-top: 57px;
 }
 @media (max-width: 991px) {
   .rd_text_box {
@@ -727,29 +727,6 @@ button:focus {
 }
 .rd_text_box .sub_title br {
   display: none;
-}
-.rd_text_box .title {
-  margin-bottom: 16px;
-}
-@media (max-width: 991px) {
-  .rd_text_box .title {
-    font-size: 26px;
-    line-height: 44px;
-    margin-bottom: 45px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  .rd_text_box .title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 45px;
-  }
-}
-.rd_text_box .title.mb_55 {
-  margin-bottom: 55px;
-}
-.rd_text_box .title.mb_35 {
-  margin-bottom: 35px;
 }
 .rd_text_box .description {
   font-size: 30px;
@@ -927,8 +904,13 @@ button:focus {
   top: 0;
 }
 
+.section_title_wrapper {
+  padding: 20px 0 18px;
+}
+
 .section_title .title {
   line-height: 1;
+  font-size: 60px;
 }
 @media (min-width: 413px) and (max-width: 991px) {
   .section_title .title {
@@ -940,14 +922,22 @@ button:focus {
     font-size: 28px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .section_title .title {
+    font-size: 40px;
+  }
+}
 .section_title .sub_title {
   line-height: 50px;
   font-family: "Helvetica Neue";
+  line-height: 30px;
+  margin-bottom: 20px;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .section_title .sub_title {
     line-height: 26px;
     font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
